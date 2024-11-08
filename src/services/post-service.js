@@ -23,3 +23,10 @@ export const loadAllPostsByPageNumberandPageSize=(PageNumberInput,PageSizeInput)
 //  (`/api/ReactJsApis/getpostsByPageNumberAndPageSize?PageNumberInput=${PageNumberInput}&PageSizeInput=${PageSizeInput}`).
 //then we will use `` but if we are using simple api then you can also use ''
 
+
+//
+//get posts by Id 
+
+export const loadPostsById=(Id)=>{
+  return myAxious.get(`/api/ReactJsApis/getpostById?Id=${Id}`).then(response=>response.data); 
+}
