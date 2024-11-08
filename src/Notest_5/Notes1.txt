@@ -25,7 +25,17 @@ import PostPage from './pages/PostPage';
 
  <Route path='/Post' element={<PostPage/>} />  // i have made this public url
 
+step 3:- create a link from readmore.. link to PostPage.jsx in Post.jsx page so.
 
- step 3:-
+Post.jsx:-
+
+ <Link to={'/Post'} >Read More..</Link>
+ 
+
+
+ step 4:-
+component-->NewFeed.jsx:-
+
+
 
 

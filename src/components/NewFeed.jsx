@@ -45,14 +45,17 @@ function NewFeed() {
     <div className="container-fluid">
       <Row>
         <Col md={{ size: 10, offset: 1 }}>
-          <h1>Blogs Count ({postContent?.TotalElements})</h1>
+          <h3>Blogs Count ({postContent?.TotalElements})</h3>
 
           {postContent?.Contents?.map((post) => (
             <Posts post={post} key={post.Id} />
           ))}
+
+
+
           {/* Pagination component */}
-          <Container className="text-center mt-1">
-            <Pagination size='lg'>
+          <Container className="text-center mt-0">
+            <Pagination size='sm' >
               {/* Previous button */}
               <PaginationItem disabled={postContent.PageNumber === 1}>
                 <PaginationLink previous onClick={() => changePage(postContent.PageNumber - 1)} >
@@ -79,6 +82,9 @@ function NewFeed() {
               </PaginationItem>
             </Pagination>
           </Container>
+
+
+
         </Col>
       </Row>
     </div>
