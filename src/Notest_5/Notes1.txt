@@ -1,0 +1,31 @@
+Q1.How to open a component on read more button click?
+Ans:-
+Step 1:- create a page name PostPage.jsx under pages
+PostPage.jsx
+________________________
+
+import React from 'react'
+import Base from '../components/Base'
+const PostPage=()=> {
+  return (
+    <Base>
+      <div>
+      <h2>This is POST Page</h2>
+    </div>
+    </Base>
+  )
+}
+export default PostPage
+
+
+
+step 2:- Add this in App.js file
+
+import PostPage from './pages/PostPage';
+
+ <Route path='/Post' element={<PostPage/>} />  // i have made this public url
+
+
+ step 3:-
+
+

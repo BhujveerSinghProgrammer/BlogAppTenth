@@ -1,11 +1,21 @@
 import CustomeNavBar from "./CustomeNavBar";
+import {Alert} from 'reactstrap';
+import '../App';
+
 
 const Base = ({ title = "welcome to our website", children }) => {
   return (
     <div>
       <CustomeNavBar className="container-fluid p-0 m-0" />
       {children}
-      <h1>This is our Footer</h1>
+   <div className="footer">
+    <Alert color="warning"  >
+        
+    </Alert>
+   </div>
+ 
+
+
     </div>
   );
 };

@@ -18,6 +18,7 @@ import ContactUs from './pages/ContactUs';
 import Privateroute from './components/Privateroute';
 import Userdashboard from './pages/user-routes/Userdashboard';
 import Profileinfo from './pages/user-routes/Profileinfo';
+import PostPage from './pages/PostPage';
 
 function App() {
   return (
@@ -36,8 +37,8 @@ function App() {
   <Route path='/signup' element={<Signup/>} />
   <Route path='/about' element={<About/>} />
   <Route path='/services' element={<Services/>} />
-    <Route path='/contactus' element={<ContactUs/>} />
-
+  <Route path='/contactus' element={<ContactUs/>} />
+  <Route path='/Post' element={<PostPage/>} />
 
 {/* // for private route */}
     <Route path='/user' element={<Privateroute/>}>
