@@ -38,7 +38,7 @@ function App() {
   <Route path='/about' element={<About/>} />
   <Route path='/services' element={<Services/>} />
   <Route path='/contactus' element={<ContactUs/>} />
-  <Route path='/Post' element={<PostPage/>} />
+  <Route path='/Post/:Id' element={<PostPage/>} />
 
 {/* // for private route */}
     <Route path='/user' element={<Privateroute/>}>

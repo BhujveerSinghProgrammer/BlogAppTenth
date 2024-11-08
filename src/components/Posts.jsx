@@ -12,7 +12,7 @@ function Posts({ post = { Title: "This is Default Post Title", Content: "This is
     {/* {post.Content.substring(0,30)}... */}
     </CardText>
         <div>
-          <Link className='btn btn-secondary border-0' to={'/Post'} >Read More..</Link>
+          <Link className='btn btn-secondary border -0' to={'/Post/'+post.Id} >Read More..</Link>
         </div>
       </CardBody>
     </Card>
